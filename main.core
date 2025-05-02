@@ -12,6 +12,7 @@
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
+<<<<<<< HEAD
     <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_7qAwUCdeEfCi489PGaiteg" name="EventOrganizer">
       <annotations text="EventOrganizer"/>
       <viewElementEvents id="_uNWsACdgEfCi489PGaiteg" name="EventOrganizer"/>
@@ -19,6 +20,21 @@
     <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_HGk6QCdfEfCi489PGaiteg" name="Customer">
       <annotations text="Customer"/>
       <viewElementEvents id="_xGsQoCdgEfCi489PGaiteg" name="Customer"/>
+=======
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_lWRUYCdREfCdZLOr2h6dUA" name="Comment">
+      <annotations text="Comment"/>
+      <viewElementEvents id="_oHFPICdREfCdZLOr2h6dUA" name="Comment">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_ydBvRydREfCdZLOr2h6dUA">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="Article.core#//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_ZT1OgCdXEfC_nanH-wDEmg" name="Account">
+      <annotations text="Account"/>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_xVFoECdXEfC_nanH-wDEmg" name="Payment">
+      <annotations text="Payment"/>
+>>>>>>> 6c169a4fd9a1559698e90557d7aa95bb54187f8e
     </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_FrT0wScgEfCD8dyqZPbt9w">
