@@ -20,6 +20,12 @@
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_ZT1OgCdXEfC_nanH-wDEmg" name="Account">
+      <annotations text="Account"/>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_xVFoECdXEfC_nanH-wDEmg" name="Payment">
+      <annotations text="Payment"/>
+    </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_FrT0wScgEfCD8dyqZPbt9w">
     <domainElements xsi:type="core:UMLDomainConcept" id="_FrmIoCcgEfCD8dyqZPbt9w" name="PaymentImpl">
