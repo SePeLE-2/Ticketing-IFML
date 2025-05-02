@@ -7,6 +7,13 @@
         <viewElementEvents id="_8DLjQCcnEfCD8dyqZPbt9w" name="Kembali">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_EMMRwCcoEfCD8dyqZPbt9w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1"/>
         </viewElementEvents>
+        <viewElementEvents id="_ep38kCdLEfC78dgQ_RTEBA" name="Komentar">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_lZ10gCdLEfC78dgQ_RTEBA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0">
+            <parameterBindingGroup id="_oqXKECdLEfC78dgQ_RTEBA">
+              <parameterBindings id="_z72FYSdLEfC78dgQ_RTEBA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </viewElementEvents>
         <viewElements xsi:type="ext:Details" id="_lcIlQCckEfCD8dyqZPbt9w" name="Article Detail">
           <parameters id="_smLUoCclEfCD8dyqZPbt9w" name="articleId"/>
           <viewComponentParts xsi:type="core:DataBinding" id="_orxxECckEfCD8dyqZPbt9w" name="Article" uniformResourceIdentifier="call/article/detail">
@@ -65,6 +72,53 @@
         <annotations text="POST"/>
         <actionEvents id="_IU3HkCc5EfCyjq2QRzYGnQ" name="actionAfterSaveArticle">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_MkYcACc5EfCyjq2QRzYGnQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1"/>
+        </actionEvents>
+      </actions>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_prvsYCc8EfCyjq2QRzYGnQ" name="Comment" isXOR="true">
+      <viewElements xsi:type="core:ViewContainer" id="_0ag8MCc8EfCyjq2QRzYGnQ" name="List Comment Page">
+        <annotations text="/article/:articleId/comment"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.1/@actions.0/@actionEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.2/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <viewElementEvents id="_TzTkACc9EfCyjq2QRzYGnQ" name="Add Comment">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_psWT4Cc9EfCyjq2QRzYGnQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.1">
+            <parameterBindingGroup id="_qy0EUCdLEfC78dgQ_RTEBA">
+              <parameterBindings id="_2eYTkidLEfC78dgQ_RTEBA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0/@viewElements.0/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:List" id="_463h8Cc8EfCyjq2QRzYGnQ" name="List Comment">
+          <parameters id="_YmPukCc9EfCyjq2QRzYGnQ" name="articleId"/>
+          <viewComponentParts xsi:type="core:DataBinding" id="_7EpR4Cc8EfCyjq2QRzYGnQ" name="Comment" uniformResourceIdentifier="call/comment/list">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_8hKTMCc8EfCyjq2QRzYGnQ" name="author" featureConcept="//@domainModel/@domainElements.115"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_81JmMCc8EfCyjq2QRzYGnQ" name="comment">
+              <featureConcept href="main.core#//@domainModel/@domainElements.121"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_0pFjsCc8EfCyjq2QRzYGnQ" name="Add Comment Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/article/:articleId/comment/create"/>
+        <viewElementEvents id="_9kuMgCc9EfCyjq2QRzYGnQ" name="Kembali">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_-6YX4Cc9EfCyjq2QRzYGnQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:Form" id="_5H-w4Cc8EfCyjq2QRzYGnQ" name="Add Comment">
+          <parameters id="_YmPukCc9EfCyjq2QRzYGnQ" name="articleId"/>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_8h750Cc9EfCyjq2QRzYGnQ" name="Tambah">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_KQNnsCc-EfCyjq2QRzYGnQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1/@actions.0"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_yzrEwCc9EfCyjq2QRzYGnQ" name="comment">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_300DYCc9EfCyjq2QRzYGnQ" name="Comment"/>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <actions id="_H5qnECc-EfCyjq2QRzYGnQ" name="Save Comment" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_MCZXACc-EfCyjq2QRzYGnQ" name="actionAfterSaveComment">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_Ms1bICc-EfCyjq2QRzYGnQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0"/>
         </actionEvents>
       </actions>
     </interactionFlowModelElements>

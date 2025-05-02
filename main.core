@@ -12,6 +12,14 @@
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_lWRUYCdREfCdZLOr2h6dUA" name="Comment">
+      <annotations text="Comment"/>
+      <viewElementEvents id="_oHFPICdREfCdZLOr2h6dUA" name="Comment">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_ydBvRydREfCdZLOr2h6dUA">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="Article.core#//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_FrT0wScgEfCD8dyqZPbt9w">
     <domainElements xsi:type="core:UMLDomainConcept" id="_FrmIoCcgEfCD8dyqZPbt9w" name="PaymentImpl">
