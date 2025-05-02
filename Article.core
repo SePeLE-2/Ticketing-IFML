@@ -104,13 +104,13 @@
         <viewElementEvents id="_9kuMgCc9EfCyjq2QRzYGnQ" name="Kembali">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_-6YX4Cc9EfCyjq2QRzYGnQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0"/>
         </viewElementEvents>
-        <viewElements xsi:type="ext:Form" id="_5H-w4Cc8EfCyjq2QRzYGnQ" name="Add Comment">
-          <parameters id="_YmPukCc9EfCyjq2QRzYGnQ" name="articleId"/>
-          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_8h750Cc9EfCyjq2QRzYGnQ" name="Tambah">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_KQNnsCc-EfCyjq2QRzYGnQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1/@actions.0"/>
+        <viewElements xsi:type="ext:Form" id="_j2N6ECdVEfCdZLOr2h6dUA" name="Add Comment">
+          <parameters id="_uvCdwCdVEfCdZLOr2h6dUA" name="articleId"/>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_zwiBsCdVEfCdZLOr2h6dUA" name="Tambah">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_1tWTsCdVEfCdZLOr2h6dUA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1/@actions.0"/>
           </viewElementEvents>
-          <viewComponentParts xsi:type="ext:SimpleField" id="_yzrEwCc9EfCyjq2QRzYGnQ" name="comment">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_300DYCc9EfCyjq2QRzYGnQ" name="Comment"/>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_m87MUCdVEfCdZLOr2h6dUA" name="Comment">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_rrOugCdVEfCdZLOr2h6dUA" name="comment"/>
             <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </viewComponentParts>
         </viewElements>
@@ -118,7 +118,11 @@
       <actions id="_H5qnECc-EfCyjq2QRzYGnQ" name="Save Comment" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="POST"/>
         <actionEvents id="_MCZXACc-EfCyjq2QRzYGnQ" name="actionAfterSaveComment">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_Ms1bICc-EfCyjq2QRzYGnQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0"/>
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_Ms1bICc-EfCyjq2QRzYGnQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0">
+            <parameterBindingGroup id="_ATyjYCdVEfCdZLOr2h6dUA">
+              <parameterBindings id="_EnIA0idVEfCdZLOr2h6dUA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0/@viewElements.0/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
         </actionEvents>
       </actions>
     </interactionFlowModelElements>
