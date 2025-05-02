@@ -6,7 +6,11 @@
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_491AECcgEfCD8dyqZPbt9w" name="NewsArticle">
       <annotations text="NewsArticle"/>
-      <viewElementEvents id="_9pk9gCcgEfCD8dyqZPbt9w" name="NewsArticle"/>
+      <viewElementEvents id="_9pk9gCcgEfCD8dyqZPbt9w" name="NewsArticle">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_ZMEdpycrEfCD8dyqZPbt9w">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="Article.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1"/>
+        </outInteractionFlows>
+      </viewElementEvents>
     </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_FrT0wScgEfCD8dyqZPbt9w">

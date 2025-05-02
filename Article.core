@@ -1,5 +1,74 @@
 <?xml version="1.0" encoding="ASCII"?>
-<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_d229UCchEfCD8dyqZPbt9w">
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_d229UCchEfCD8dyqZPbt9w">
+  <interactionFlowModel id="_B1WIcCcjEfCD8dyqZPbt9w">
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_B1ZLwCcjEfCD8dyqZPbt9w" name="NewsArticle" isXOR="true">
+      <viewElements xsi:type="core:ViewContainer" id="_HJ_48CcjEfCD8dyqZPbt9w" name="Article Detail Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/article/:articleId"/>
+        <viewElementEvents id="_8DLjQCcnEfCD8dyqZPbt9w" name="Kembali">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_EMMRwCcoEfCD8dyqZPbt9w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:Details" id="_lcIlQCckEfCD8dyqZPbt9w" name="Article Detail">
+          <parameters id="_smLUoCclEfCD8dyqZPbt9w" name="articleId"/>
+          <viewComponentParts xsi:type="core:DataBinding" id="_orxxECckEfCD8dyqZPbt9w" name="Article" uniformResourceIdentifier="call/article/detail">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_uIvwECckEfCD8dyqZPbt9w" name="article title" featureConcept="//@domainModel/@domainElements.15"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_uuAZQCckEfCD8dyqZPbt9w" name="article date" featureConcept="//@domainModel/@domainElements.18"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_3F7GcCckEfCD8dyqZPbt9w" name="article author" featureConcept="//@domainModel/@domainElements.17"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_4ODzMCckEfCD8dyqZPbt9w" name="article content" featureConcept="//@domainModel/@domainElements.16"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_Q132cCclEfCD8dyqZPbt9w" name="List Article Page">
+        <annotations text="/article"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.1/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@actions.0/@actionEvents.0/@outInteractionFlows.0"/>
+        <viewElementEvents id="_A69foCcqEfCD8dyqZPbt9w" name="Tambah">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_CSy1QCcqEfCD8dyqZPbt9w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:List" id="_Wlhg4CclEfCD8dyqZPbt9w" name="List Article">
+          <viewElementEvents id="_ehh4sCcmEfCD8dyqZPbt9w" name="Detail">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_qCC5ECcnEfCD8dyqZPbt9w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0">
+              <parameterBindingGroup id="_0ybdAicoEfCD8dyqZPbt9w">
+                <parameterBindings id="_1wYTAicoEfCD8dyqZPbt9w" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElements.0/@viewComponentParts.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_ZFbR0CclEfCD8dyqZPbt9w" name="List Article" uniformResourceIdentifier="call/article/list">
+            <parameters id="_smLUoCclEfCD8dyqZPbt9w" name="articleId"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_b0dD4CclEfCD8dyqZPbt9w" name="article title"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_cZGCACclEfCD8dyqZPbt9w" name="article date"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_cu-LYCclEfCD8dyqZPbt9w" name="article author"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_51nDACcoEfCD8dyqZPbt9w" name="Add Article Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/article/create"/>
+        <viewElementEvents id="_QquHoCcrEfCD8dyqZPbt9w" name="Kembali">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_S04SECcrEfCD8dyqZPbt9w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:Form" id="_-7R8UCcoEfCD8dyqZPbt9w" name="Add Article">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_jjHmcCcqEfCD8dyqZPbt9w" name="Tambah">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_2FGT4CcqEfCD8dyqZPbt9w"/>
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_GtPpgCc5EfCyjq2QRzYGnQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.0"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_CLcskCcpEfCD8dyqZPbt9w" name="Article Title">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_Y-gYMCcqEfCD8dyqZPbt9w" name="article title"/>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_CpkzACcpEfCD8dyqZPbt9w" name="Article Content">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_ZgGpYCcqEfCD8dyqZPbt9w" name="article content"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <actions id="_DiYQACc5EfCyjq2QRzYGnQ" name="Save Article" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.1">
+        <annotations text="POST"/>
+        <actionEvents id="_IU3HkCc5EfCyjq2QRzYGnQ" name="actionAfterSaveArticle">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_MkYcACc5EfCyjq2QRzYGnQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1"/>
+        </actionEvents>
+      </actions>
+    </interactionFlowModelElements>
+  </interactionFlowModel>
   <domainModel id="_d229USchEfCD8dyqZPbt9w">
     <domainElements xsi:type="core:UMLDomainConcept" id="_d3TCMCchEfCD8dyqZPbt9w" name="PaymentImpl">
       <classifier xsi:type="uml:Class" href="UML-DOP%20Project.uml#_oYINgCCbEfCGrZHZMGtCtA"/>
