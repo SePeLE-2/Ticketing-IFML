@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_FrT0wCcgEfCD8dyqZPbt9w">
+  <annotations text="/event/tickets/:eventId"/>
+  <annotations text="/event/tickets/:eventId/new"/>
   <interactionFlowModel id="_rnLIACcgEfCD8dyqZPbt9w">
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_rnTD0CcgEfCD8dyqZPbt9w" name="Home" isXOR="true">
       <annotations text="/"/>
@@ -19,6 +21,22 @@
           <targetInteractionFlowElement xsi:type="core:ViewContainer" href="Article.core#//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0"/>
         </outInteractionFlows>
       </viewElementEvents>
+      <viewElementEvents id="_zi8FECdqEfCXsJa4bYyHag" name="ViewElement Event"/>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_XSqM2ydyEfCXsJa4bYyHag" name="Report">
+      <viewElements id="_sZjG6ydyEfCXsJa4bYyHag" name="Report" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0/@outInteractionFlows.0">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_RfKHlydzEfCXsJa4bYyHag" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0"/>
+      </viewElements>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_DYV-CydzEfCXsJa4bYyHag" name="Ticket">
+      <viewElements id="_M0NbaydzEfCXsJa4bYyHag" name="Ticket" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.0/@outInteractionFlows.0">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_N2IydydzEfCXsJa4bYyHag" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.0"/>
+      </viewElements>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_UmynCydzEfCXsJa4bYyHag" name="Event" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.5/@viewElements.0/@outInteractionFlows.0">
+      <viewElements id="_V-pxuydzEfCXsJa4bYyHag" name="Event">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_W_Q6JydzEfCXsJa4bYyHag" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.5"/>
+      </viewElements>
     </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_FrT0wScgEfCD8dyqZPbt9w">
