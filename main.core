@@ -12,6 +12,14 @@
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_7qAwUCdeEfCi489PGaiteg" name="EventOrganizer">
+      <annotations text="EventOrganizer"/>
+      <viewElementEvents id="_uNWsACdgEfCi489PGaiteg" name="EventOrganizer"/>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_HGk6QCdfEfCi489PGaiteg" name="Customer">
+      <annotations text="Customer"/>
+      <viewElementEvents id="_xGsQoCdgEfCi489PGaiteg" name="Customer"/>
+    </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_FrT0wScgEfCD8dyqZPbt9w">
     <domainElements xsi:type="core:UMLDomainConcept" id="_FrmIoCcgEfCD8dyqZPbt9w" name="PaymentImpl">
