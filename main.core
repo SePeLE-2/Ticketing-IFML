@@ -38,6 +38,30 @@
         <outInteractionFlows xsi:type="core:NavigationFlow" id="_W_Q6JydzEfCXsJa4bYyHag" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.5"/>
       </viewElements>
     </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_t-ht8CpiEfCgvMU4zRCp6Q" name="EventOrganizer">
+      <annotations text="EventOrganizer"/>
+      <viewElementEvents id="_9pk9gCcgEfCD8dyqZPbt9w" name="EventOrganizer">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_ZMEdpycrEfCD8dyqZPbt9w">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="EventOrganizer.core#//@interactionFlowModel/@interactionFlowModelElements.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_w5itkCpiEfCgvMU4zRCp6Q" name="Customer">
+      <annotations text="Customer"/>
+      <viewElementEvents id="_9pk9gCcgEfCD8dyqZPbt9w" name="Customer">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_ZMEdpycrEfCD8dyqZPbt9w">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="EventOrganizer.core#//@interactionFlowModel/@interactionFlowModelElements.1"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_wkvAICrvEfCFJ53B54puyA" name="Payment">
+      <annotations text="Payment"/>
+      <viewElementEvents id="_9pk9gCcgEfCD8dyqZPbt9w" name="Payment">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_ZMEdpycrEfCD8dyqZPbt9w">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="Payment.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_FrT0wScgEfCD8dyqZPbt9w">
     <domainElements xsi:type="core:UMLDomainConcept" id="_FrmIoCcgEfCD8dyqZPbt9w" name="PaymentImpl">
