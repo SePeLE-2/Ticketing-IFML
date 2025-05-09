@@ -30,6 +30,7 @@
         </viewElements>
       </viewElements>
       <viewElements xsi:type="core:ViewContainer" id="_tYKaUCdpEfCXsJa4bYyHag" name="&lt;&lt;ViewContainer>> Table Ticket Page">
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.4/@viewElementEvents.0/@outInteractionFlows.0"/>
         <viewElements xsi:type="ext:List" id="_wp-JUCdpEfCXsJa4bYyHag" name="&lt;&lt;List>> Table Ticket">
           <viewComponentParts xsi:type="core:DataBinding" id="_zeeRQCdpEfCXsJa4bYyHag" name="&lt;&lt;DataBinding>> List Ticket">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_1u_iYCdpEfCXsJa4bYyHag" name="&lt;&lt;VisualizationAttribute>> Id Ticket: Integer "/>

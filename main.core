@@ -24,19 +24,28 @@
       <viewElementEvents id="_zi8FECdqEfCXsJa4bYyHag" name="ViewElement Event"/>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_XSqM2ydyEfCXsJa4bYyHag" name="Report">
-      <viewElements id="_sZjG6ydyEfCXsJa4bYyHag" name="Report" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0/@outInteractionFlows.0">
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_RfKHlydzEfCXsJa4bYyHag" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0"/>
-      </viewElements>
+      <annotations text="Report"/>
+      <viewElementEvents id="_p1yvSCzZEfCCYtAjuxpLzA" name="Report">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_tiyldyzZEfCCYtAjuxpLzA">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="Report.core#//@interactionFlowModel/@interactionFlowModelElements.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_DYV-CydzEfCXsJa4bYyHag" name="Ticket">
-      <viewElements id="_M0NbaydzEfCXsJa4bYyHag" name="Ticket" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.0/@outInteractionFlows.0">
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_N2IydydzEfCXsJa4bYyHag" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.0"/>
-      </viewElements>
+      <annotations text="Ticket"/>
+      <viewElementEvents id="_vFc4yCzeEfCCYtAjuxpLzA" name="Ticket">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_1eCyhyzeEfCCYtAjuxpLzA">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="Ticket.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.1"/>
+        </outInteractionFlows>
+      </viewElementEvents>
     </interactionFlowModelElements>
-    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_UmynCydzEfCXsJa4bYyHag" name="Event" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.5/@viewElements.0/@outInteractionFlows.0">
-      <viewElements id="_V-pxuydzEfCXsJa4bYyHag" name="Event">
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_W_Q6JydzEfCXsJa4bYyHag" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.5"/>
-      </viewElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_UmynCydzEfCXsJa4bYyHag" name="Event">
+      <annotations text="Event"/>
+      <viewElementEvents id="_zkkveCzeEfCCYtAjuxpLzA" name="Event">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_4Ea-5yzeEfCCYtAjuxpLzA">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="Event.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
     </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_FrT0wScgEfCD8dyqZPbt9w">

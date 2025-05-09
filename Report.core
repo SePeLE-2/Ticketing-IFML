@@ -4,6 +4,7 @@
   <annotations text="/event/:eventId/report"/>
   <interactionFlowModel id="_GqYpUCdmEfCXsJa4bYyHag">
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_GqYpUSdmEfCXsJa4bYyHag" name="Report">
+      <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.3/@viewElementEvents.0/@outInteractionFlows.0"/>
       <viewElements xsi:type="core:ViewContainer" id="_IuKe8CdmEfCXsJa4bYyHag" name="[XOR] &lt;&lt;ViewContainer>> SalesReport" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@actions.0/@outInteractionFlows.1">
         <viewElements xsi:type="ext:Details" id="_MOvCsCdmEfCXsJa4bYyHag" name="GeneratedSalesReport">
           <viewComponentParts xsi:type="core:DataBinding" id="_PUjkICdmEfCXsJa4bYyHag" name="Data Binding">
